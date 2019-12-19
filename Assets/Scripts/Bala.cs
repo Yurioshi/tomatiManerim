@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    void Start()
     {
-        Destroy(this.gameObject);
+        Destroy(this.gameObject, 5f);
     }
 }
