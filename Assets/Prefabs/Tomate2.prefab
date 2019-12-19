@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5829080610684729080}
   - component: {fileID: 7383839107687490975}
-  - component: {fileID: 3390695792106706084}
+  - component: {fileID: 4838522307921230660}
   - component: {fileID: 1320746213276582340}
   - component: {fileID: 6448585597756303583}
+  - component: {fileID: 5180044914147335330}
   m_Layer: 0
   m_Name: Tomate2
   m_TagString: Untagged
@@ -60,6 +61,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -83,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3390695792106706084
+--- !u!114 &4838522307921230660
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,9 +94,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1608305560297877644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3bf4c376d944a64cb5b5754a3538108, type: 3}
+  m_Script: {fileID: 11500000, guid: 327e9419f1278c24a91ef3da24994cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 5180044914147335330}
 --- !u!58 &1320746213276582340
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -139,6 +142,27 @@ PolygonCollider2D:
     - - {x: -4.05261, y: 10.950714}
       - {x: 4.0462503, y: 10.9583645}
       - {x: 0.0031991452, y: 0.7029627}
+--- !u!50 &5180044914147335330
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608305560297877644}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 3
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3635807662354932643
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1642742460161272012}
   - component: {fileID: 3884500414976198879}
   - component: {fileID: 7791315889706861480}
-  - component: {fileID: 1700200613191193037}
+  - component: {fileID: 9087671475944763113}
   m_Layer: 0
   m_Name: Semente1
   m_TagString: Untagged
@@ -103,7 +103,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1700200613191193037
+--- !u!114 &9087671475944763113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,6 +112,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2394222097761597529}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea220c22673cba84893b0ae162cd3e1c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ce3fde61fd01a441a348c20db54cf86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
