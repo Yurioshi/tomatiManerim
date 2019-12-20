@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movimentacao : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float speed = 10f;
+    public float speed = 3f;
     public Camera cam;
 
     private Vector2 movement;
@@ -13,8 +13,7 @@ public class Movimentacao : MonoBehaviour
 
     private void Update()
     {
-        movement.x = Input.GetAxis("Horizontal");
-        movement.y = Input.GetAxis("Vertical");
+        movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
@@ -25,6 +24,6 @@ public class Movimentacao : MonoBehaviour
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
         
-        rb.MovePosition(transform.position * speed * movement * Time.deltaTime);
+        rb.MovePosition((Vector2)transform.position + (movement * speed * Time.deltaTime));
     }
 }
